@@ -8,7 +8,7 @@ const salaries: any = {
 const employees = Object.keys(salaries).length;
 let sumSalaries = 0;
 for (const salariesKey in salaries) {
-  sumSalaries += parseInt(salaries[salariesKey]);
+  sumSalaries += salaries[salariesKey];
 }
 const middleSalaries = sumSalaries / employees;
 console.log(middleSalaries);
